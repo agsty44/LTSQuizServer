@@ -23,8 +23,9 @@ let list: string[] = []
 radio.setGroup(1)
 basic.forever(function () {
     if (list.length == 0) {
-        basic.clearScreen()
+        basic.showString("Server Idle")
     } else {
+        basic.clearScreen()
         basic.showString("" + (list[0]))
     }
 })
