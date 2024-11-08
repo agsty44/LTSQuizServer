@@ -21,9 +21,10 @@ input.onButtonPressed(Button.B, function () {
 })
 let list: string[] = []
 radio.setGroup(1)
+basic.showString("Server")
 basic.forever(function () {
     if (list.length == 0) {
-        basic.showString("Server Idle")
+        basic.clearScreen()
     } else {
         basic.clearScreen()
         basic.showString("" + (list[0]))
